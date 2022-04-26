@@ -83,6 +83,8 @@ body{
 }
 
 
+
+
 /* notification-banner */
 
 .not-banner{
@@ -119,17 +121,9 @@ body{
 }
 
 
-
-
     
     
     
-
-
-
-
-
-
 
 
 
@@ -147,9 +141,9 @@ body{
 }
 .nav-container div input{
     width: 350px;
-    border: none;
-    margin-left: 60px;
-    border: 1px solid #fafafa;
+    margin-left: 61px;
+    border: 1px solid rgba(0, 0, 0,0.06);
+    ;
 
 }
 
@@ -160,11 +154,56 @@ body{
     color:#b1b1b1;
     text-align: center;
     line-height: 25px;
-    border: 1px solid #fafafa;
+    border: 1px solid rgba(0, 0, 0,0.06);
+    ;
     background-color: white;
     width: 60px;
     height: 28px;
 }
+
+
+
+/* chat list */
+
+.chat-list{
+    position: relative;
+    height: calc(100% - 110px);
+    overflow-y: auto;
+}
+
+.chat-list .block{
+    position: relative;
+    width: 100%;
+    display: flex;
+    line-height: 10px;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0,0.06);
+
+}
+
+.chat-list .block .img-box{
+    position: relative;
+    width: 45px;
+    height:45px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.details{
+    margin-left: 20px;
+}
+
+.sub-d{
+    color: gray;
+    font-size: 13px;
+
+}
+
+
+
+
+
 
 
     
