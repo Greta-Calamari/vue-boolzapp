@@ -45,6 +45,10 @@ body{
     width: 100%;
     height:60px;
     background-color:#eaeaea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
 }
 .mainUser{
     position: relative;
@@ -54,5 +58,33 @@ body{
     border-radius: 50%;
     cursor: pointer;
 }
+.nav-icons{
+    display: flex;
     
+}
+    
+.nav-icons li{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    color:#b1b1b1;
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 20px;
+}
+.covImg{
+    width: 100%;
+}
+    
+
+.user-name{
+    margin-top:15px;
+    margin-right: 155px;
+}
+
+   
+    
+
+
+
     
