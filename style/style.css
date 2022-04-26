@@ -7,3 +7,24 @@ body{
    
 }
  /* ho imparato a usare un gradiente per semplificarmi la life */
+
+ .chat-container{
+     display: flex;
+     position: relative;
+     width: 1400px;
+     max-width: 100%;
+     height: calc(100vh - 50px);
+     background-color: white;
+
+ }
+
+ .chat-container .left{
+     position: relative;
+     flex: 30%;
+     background-color: green;
+ }
+ .chat-container .right{
+    position: relative;
+    flex: 70%;
+    background-color: blue;
+}
