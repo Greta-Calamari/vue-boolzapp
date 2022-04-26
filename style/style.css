@@ -190,16 +190,38 @@ body{
     border-radius: 50%;
 }
 
+.chat-list .block .details{
+    position: relative;
+    width: 100%;
+}
+
+.chat-list .block .details .listHead{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+
 .details{
     margin-left: 20px;
 }
 
-.sub-d{
+.message{
     color: gray;
     font-size: 13px;
 
 }
 
+.block:active {
+   background: #fafafa;
+   
+ }
+
+
+
+
+  
 
 
 
