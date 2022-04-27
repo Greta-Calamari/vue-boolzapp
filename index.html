@@ -61,7 +61,7 @@
     
                 <div class="nav-container">
                     <div>
-                        <input type="text" placeholder="Cerca o inizia una nuova chat" class="input-nav" v-model="searchText">
+                        <input type="text" placeholder="Cerca o inizia una nuova chat" class="input-nav" v-model="searchText" @keyup ="filterContact()">
                     </div>
                     
                     
@@ -81,23 +81,26 @@
     
                     
     
-    
+                    
                     <div  :class="{'active' : index === currentIndex}"  class="block" v-for="(contact,index) in contacts" :key="index" @click="selected(index)">
-                        <div class="img-box">
-                            <img :src="'./img/avatar' + contact.avatar + '.jpg'" :alt="'avatar'+contact.name" class="w-100" >
+                        <div v-if="contact.visible">
                         </div>
-                        <div class="details">
-                            <div class="listHead">
-    
-                                <h6>{{contact.name}}</h6>
-                                <p class="message">12:00</p>
+                            <div class="img-box">
+                                <img :src="'./img/avatar' + contact.avatar + '.jpg'" :alt="'avatar'+contact.name" class="w-100" >
                             </div>
-                            <div class="message">
-                                <p>ultimo messaggio inviato</p>
+
+                            <div class="details">
+                                <div class="listHead">
+                                    
+                                    <h6>{{contact.name}}</h6>
+                                    <p class="message">12:00</p>
+                                </div>
+                                <div class="message">
+                                    <p>ultimo messaggio inviato</p>
+                                </div>
+                                
+                                
                             </div>
-    
-                            
-                        </div>
                     </div>
     
                     
