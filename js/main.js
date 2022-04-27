@@ -176,11 +176,44 @@ const boolzapp = new Vue({
 
     methods: {
         selected(index){
-            this.currentIndex = index
-            this.imageIndex = index + 1
+            this.currentIndex = index;
+            
         },
-        changeActive(index){
-            this.activeIndex = index
+        sendMessage(){
+            const newMessage = {
+                date:dayjs().format('DD/MM/YYYY HH:mm:ss'),
+                message: this.message,
+                status:'sent'
+
+            }
+            const responseMessage =
+            {
+                date:dayjs().format('DD/MM/YYYY HH:mm:ss'),
+                message: this.message,
+                status:'received'
+
+            }; 
+            this.contacts[this.currentIndex].messages.push(newMessage);
+            this.message='';
+            setTimeout(()=>{
+            this.contacts[this.currentIndex].messages.push(responseMessage);
+
+
+            },2000)
+
+        },
+        filterContact(){
+            this.contacts.forEach((contact)=>{
+                if(contact.name.includes(this.searchText)){
+                    contact.visible = true;
+                }else{
+                    contact.visible = false;
+
+
+                }
+
+            })
+
         },
 
     },
