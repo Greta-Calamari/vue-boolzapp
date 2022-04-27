@@ -189,7 +189,7 @@ const boolzapp = new Vue({
             const responseMessage =
             {
                 date:dayjs().format('DD/MM/YYYY HH:mm:ss'),
-                message: this.message,
+                message: 'ok',
                 status:'received'
 
             }; 

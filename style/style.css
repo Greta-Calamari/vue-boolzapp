@@ -13,7 +13,7 @@ body{
      position: relative;
      width: 1400px;
      max-width: 100%;
-     height: calc(100vh - 50px);
+     /* height: calc(100vh - 50px); */
      background-color: white;
 
  }

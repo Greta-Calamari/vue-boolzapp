@@ -111,6 +111,8 @@
             
             <div class="right">
                 <div class="header">
+
+                    <!-- chiedere come fare  -->
                     <div class="mainUser">
     
                         <img src="./img/avatar_1.jpg" alt="main-User-image" class="covImg">
@@ -160,7 +162,7 @@
                 <!-- chat input -->
                 <div class="chat-input">
                     <i class="fa-solid fa-face-smile"></i>
-                    <input type="text" placeholder="Scrivi un messaggio" v-model="sendMessage">
+                    <input type="text" placeholder="Scrivi un messaggio" v-model="message" @keyup.enter ="sendMessage()">
                     <i class="fa-solid fa-microphone"></i>
                 </div>
             </div>
