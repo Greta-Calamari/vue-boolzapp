@@ -93,6 +93,7 @@
                                     
                                     <h6>{{contact.name}}</h6>
                                     <p class="message">12:00</p>
+                                    
                                 </div>
                                 <div class="message">
                                     <p>ultimo messaggio inviato</p>
@@ -130,7 +131,7 @@
                                     
                                 </div>
                                 <div class="message">
-                                    <p>Ultimo accesso alle ore </p>
+                                    <p>Ultimo accesso alle ore 12:00</p>
                                 </div>
                                 
                                 
@@ -149,12 +150,25 @@
     
                 <div class="chatBox">
                     <div class="mex" v-for="(item,index) in contacts[currentIndex].messages" :key="index" :class="item.status === 'sent' ? 'my-mex' : 'other-mex'">
-                        <p>{{item.message}} <br><span>12:25</span></p>
                         
-                    </div>
+                        <p>{{item.message}} <br><span>12:25
+                            
+                        </span>
+                    </p>
+                    <span>
+                        <div class="dropdown">
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                            <div class="dropdown-content">
+                            <p>elimina messaggio</p>
+                            </div>
+                          </div>
+                        
+                    </span>
                     
-                    
-                    
+                </div>
+                
+                
+                
                     
                     
                         
