@@ -53,11 +53,12 @@ body{
 .mainUser{
     position: relative;
     width: 40px;
-    height: 40px;
-    overflow: hidden;
     border-radius: 50%;
     cursor: pointer;
 }
+
+    
+
 .nav-icons{
     display: flex;
     
@@ -149,7 +150,7 @@ body{
 
 .lens{
     position: absolute;
-    left: 5px;
+    left: 2px;
     top: 11px;
     color:#b1b1b1;
     text-align: center;
@@ -174,9 +175,7 @@ body{
 .chat-list .block{
     position: relative;
     width: 100%;
-    display: flex;
     line-height: 10px;
-    align-items: center;
     padding: 15px;
     border-bottom: 1px solid rgba(0, 0, 0,0.06);
     cursor: pointer;

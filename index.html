@@ -83,7 +83,7 @@
     
                     
                     <div  :class="{'active' : index === currentIndex}"  class="block" v-for="(contact,index) in contacts" :key="index" @click="selected(index)">
-                        <div v-if="contact.visible">
+                        <div v-if="contact.visible" class="d-flex">
                             <div class="img-box">
                                 <img :src="'./img/avatar' + contact.avatar + '.jpg'" :alt="'avatar'+contact.name" class="w-100" >
                             </div>
@@ -115,27 +115,27 @@
             <div class="right">
                 <div class="header">
 
-                    <!-- chiedere come fare  -->
-                    <div class="mainUser">
+                   
+                    <div class="mainUser" v-for="(contact,index) in contacts" :key="index">
     
-                        <img src="./img/avatar_1.jpg" alt="main-User-image" class="covImg">
-    
+                        <img :src="'./img/avatar' + contact.avatar + '.jpg'" alt="" class="covImg">
                     </div>
-                    <div class="user-name2">
     
-                        <div class="details">
-                            <div class="listHead">
-    
-                                <h6></h6>
+                        <div class="user-name2">
+                            
+                            <div class="details"  v-for="(contact,index) in contacts[currentIndex].name" :key="index">
+                                <div class="listHead">
+                                    
+                                    <h6>{{contact.name}}</h6>
+                                    
+                                </div>
+                                <div class="message">
+                                    <p>{{contact.date}}</p>
+                                </div>
+                                
                                 
                             </div>
-                            <div class="message">
-                                <p></p>
-                            </div>
-    
-                            
                         </div>
-                    </div>
     
                     <ul class="nav-icons">
                         <li><i class="fa-solid fa-magnifying-glass"></i></li>
