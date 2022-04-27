@@ -116,21 +116,21 @@
                 <div class="header">
 
                    
-                    <div class="mainUser" v-for="(contact,index) in contacts" :key="index">
+                    <div class="mainUser"  >
     
-                        <img :src="'./img/avatar' + contact.avatar + '.jpg'" alt="" class="covImg">
+                        <img :src="'./img/avatar' + contacts[currentIndex].avatar + '.jpg'" alt="" class="covImg">
                     </div>
     
                         <div class="user-name2">
                             
-                            <div class="details"  v-for="(contact,index) in contacts[currentIndex].name" :key="index">
+                            <div class="details">
                                 <div class="listHead">
                                     
-                                    <h6>{{contact.name}}</h6>
+                                    <h6>{{contacts[currentIndex].name}}</h6>
                                     
                                 </div>
                                 <div class="message">
-                                    <p>{{contact.date}}</p>
+                                    <p>Ultimo accesso alle ore </p>
                                 </div>
                                 
                                 
