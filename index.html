@@ -142,15 +142,12 @@
     
                 <!-- chatbox -->
     
-                <div class="chatBox" >
-                    <div class="mex my-mex" v-for="(item,index) in contacts[currentIndex].messages" :key="index" :class="item.status === 'sent' ? 'sent' : 'received'">
+                <div class="chatBox">
+                    <div class="mex" v-for="(item,index) in contacts[currentIndex].messages" :key="index" :class="item.status === 'sent' ? 'my-mex' : 'other-mex'">
                         <p>{{item.message}} <br><span>12:25</span></p>
                         
                     </div>
-                    <div class="mex other-mex" v-for="(item,index) in contacts[currentIndex].messages" :key="index" :class="item.status === 'sent' ? 'sent' : 'received'">
-                        <p>{{item.message}} <br><span>12:25</span></p>
-                        
-                    </div>
+                    
                     
                     
                     
