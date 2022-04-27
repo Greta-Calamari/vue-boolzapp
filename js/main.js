@@ -164,11 +164,24 @@ const boolzapp = new Vue({
                     }
                 ],
             }
-        ]        
+        ] ,
+        currentIndex:0,
+        searchText:'',
+        message:'',
+        
+
+
 
     },
 
     methods: {
+        selected(index){
+            this.currentIndex = index
+            this.imageIndex = index + 1
+        },
+        changeActive(index){
+            this.activeIndex = index
+        },
 
     },
 
