@@ -204,7 +204,7 @@ const boolzapp = new Vue({
         },
         filterContact(){
             this.contacts.forEach((contact)=>{
-                if(contact.name.toLoweCase().includes(this.searchText.toLoweCase())){
+                if(contact.name.toLowerCase().includes(this.searchText.toLowerCase())){
                     contact.visible = true;
                 }else{
                     contact.visible = false;
