@@ -22,11 +22,13 @@ body{
      position: relative;
      flex: 30%;
      background-color:white;
+     height: 100vh;
  }
  .chat-container .right{
     position: relative;
     flex: 70%;
     background-color: #ded6cf;
+    
     
 }
 
@@ -352,21 +354,9 @@ body{
 
 
 
-.message-text.sent {
-    filter: drop-shadow(3px 3px 3px rgb(133, 133, 133));
-    background-color: #d5f9ba;
 
-    color: black;
-    float: right;
 
-}
 
-.message-text.received {
-    filter: drop-shadow(3px 3px 3px rgb(133, 133, 133));
-    background-color: white;
-    color: black;
-    float: left;
-}
   
  
     

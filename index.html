@@ -92,11 +92,11 @@
                                 <div class="listHead">
                                     
                                     <h6>{{contact.name}}</h6>
-                                    <p class="message">{{contacts[currentIndex].messages[contacts[currentIndex].messages.length - 1].date}}</p>
+                                    <p class="message">{{contact.messages[contact.messages.length - 1].date}}</p>
                                     
                                 </div>
                                 <div class="message">
-                                    <p>{{contact.messages.at(-1).message}}</p>
+                                    <p>{{contact.messages[contact.messages.length - 1].message}}</p>
                                 </div>
                                 
                                 
@@ -131,7 +131,7 @@
                                     
                                 </div>
                                 <div class="message">
-                                    <p>Ultimo accesso alle ore {{contacts[currentIndex].messages[contacts[currentIndex].messages.length - 1].date}}</p>
+                                    <p>Ultimo accesso il {{contacts[currentIndex].messages[contacts[currentIndex].messages.length - 1].date}}</p>
                                 </div>
                                 
                                 
