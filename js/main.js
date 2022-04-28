@@ -75,12 +75,12 @@ const boolzapp = new Vue({
                 visible: true,
                 messages: [
                     {
-                        date: '10/01/2020 15:30:55',
+                        date: '15/01/2020 15:30:55',
                         message: 'Lo sai che ha aperto una nuova pizzeria?',
                         status: 'sent'
                     },
                     {
-                        date: '10/01/2020 15:50:00',
+                        date: '15/01/2020 15:50:00',
                         message: 'Si, ma preferirei andare al cinema',
                         status: 'received'
                     }
@@ -92,12 +92,12 @@ const boolzapp = new Vue({
                 visible: true,
                 messages: [
                     {
-                        date: '10/01/2020 15:30:55',
+                        date: '26/01/2020 15:30:55',
                         message: 'Ricordati di chiamare la nonna',
                         status: 'sent'
                     },
                     {
-                        date: '10/01/2020 15:50:00',
+                        date: '26/01/2020 15:50:00',
                         message: 'Va bene, stasera la sento',
                         status: 'received'
                     }
@@ -109,17 +109,17 @@ const boolzapp = new Vue({
                 visible: true,
                 messages: [
                     {
-                        date: '10/01/2020 15:30:55',
+                        date: '13/01/2020 15:30:55',
                         message: 'Ciao Claudia, hai novità?',
                         status: 'sent'
                     },
                     {
-                        date: '10/01/2020 15:50:00',
+                        date: '13/01/2020 15:50:00',
                         message: 'Non ancora',
                         status: 'received'
                     },
                     {
-                        date: '10/01/2020 15:51:00',
+                        date: '13/01/2020 15:51:00',
                         message: 'Nessuna nuova, buona nuova',
                         status: 'sent'
                     }
@@ -131,12 +131,12 @@ const boolzapp = new Vue({
                 visible: true,
                 messages: [
                     {
-                        date: '10/01/2020 15:30:55',
+                        date: '29/01/2020 15:30:55',
                         message: 'Fai gli auguri a Martina che è il suo compleanno!',
                         status: 'sent'
                     },
                     {
-                        date: '10/01/2020 15:50:00',
+                        date: '29/01/2020 15:50:00',
                         message: 'Grazie per avermelo ricordato, le scrivo subito!',
                         status: 'received'
                     }
@@ -148,17 +148,17 @@ const boolzapp = new Vue({
                 visible: true,
                 messages: [
                     {
-                        date: '10/01/2020 15:30:55',
+                        date: '11/01/2020 15:30:55',
                         message: 'Ciao, andiamo a mangiare la pizza stasera?',
                         status: 'received'
                     },
                     {
-                        date: '10/01/2020 15:50:00',
+                        date: '11/01/2020 15:50:00',
                         message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
                         status: 'sent'
                     },
                     {
-                        date: '10/01/2020 15:51:00',
+                        date: '11/01/2020 15:51:00',
                         message: 'OK!!',
                         status: 'received'
                     }
