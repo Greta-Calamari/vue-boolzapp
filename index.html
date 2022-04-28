@@ -153,17 +153,17 @@
                         
                         
                     <p>{{item.message}} <br><span>{{item.date}}</span>
+                    </p>
                         <div class="dropdown">
                             <button class="btn p-2" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                              aria-expanded="false">
+                              aria-expanded="false" @click="showDrop(index)">
                               <i class="fa-solid fa-chevron-down"></i>
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <ul class="dropdown-menu" :class="{'d-block' : item.show}" aria-labelledby="dropdownMenu2">
                               <li><button @click="cancellaMessaggio" class="dropdown-item" type="button">Elimina messaggio</button></li>
                               <li><button class="dropdown-item" type="button">Another action</button></li>
                             </ul>
                           </div>
-                    </p>
                             
                             
                             
