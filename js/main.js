@@ -186,10 +186,11 @@ const boolzapp = new Vue({
                 status:'sent'
 
             }
+            let random = ['Ehilà', 'Tutto ok?', 'Non mi sento molto bene ', 'Sai quando è il colpeanno di claudia?','Sushino??','CIAO MAMMA', 'NON CI POSSO CREDERE LA SIGNORINA DEL NAVIGATORE!!']
             const responseMessage =
             {
                 date:dayjs().format('DD/MM/YYYY HH:mm:ss'),
-                message: 'ok',
+                message: random[Math.floor(Math.random() * random.length)],
                 status:'received'
 
             }; 
@@ -214,6 +215,9 @@ const boolzapp = new Vue({
 
             })
 
+        },
+        cancellaMessaggio() {
+            this.contacts[this.currentIndex].messages.pop(this.message);
         },
 
     },
